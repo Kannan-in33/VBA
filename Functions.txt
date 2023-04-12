@@ -1,0 +1,5 @@
+'This function extracts link from a hyperlink
+
+Function GetHyperlinkAddress(cell As Range)
+    GetHyperlinkAddress = cell.Hyperlinks(1).Address
+End Function
