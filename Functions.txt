@@ -1,5 +1,13 @@
 'This function extracts link from a hyperlink
 
 Function GetHyperlinkAddress(cell As Range)
-    GetHyperlinkAddress = cell.Hyperlinks(1).Address
+    	GetHyperlinkAddress = cell.Hyperlinks(1).Address
 End Function
+
+'Subroutine to wait for specific seconds
+
+Sub WaitFor(secondsToWait As Double)
+	Do While Timer < (Timer + secondsToWait)
+   		DoEvents
+	Loop
+End Sub
